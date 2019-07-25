@@ -10,27 +10,39 @@
     <center>
          <h1> Lalwle Clock </h1>
          <h4> This is time </h4>
-         <div id="Clock">clock</div>
+         <div id="clock"></div>
         <div><img src="http://www.petdocclub.ie/wp-content/uploads/2018/02/Fun-Cat-Facts-Featured.png" style="width:50%"> </div>
 
         <div id="mainGrid">
             
-            <div class="grid">Timer</div>
-            <div class="grid"><input type="number">
+            <div class="grid">
+                Timer:
+            </div>
+            <div class="grid">
+                <input type="text" id="minute" value="0" size="3"/> &nbsp; &nbsp;
+            <!-- </div>
+            <div class="grid"> -->
+                    <input type="text" id="second" value="0" size="3">
+                </div>
+<!-- have chane tm -->
+            <div class="grid" id="start">
+                <input type="button" value="Start" id="btn" onclick="countdownTimer()" /> <br>
+                <input type="button" value="Reset" id="btn2" />
             </div>
 
-            <div class="grid" id="start"> <button>start</button></div>
-
-            <div class="grid">Return</div>
-            <div class="grid" id=text></div>
-            <div class="grid">lunchdd break</div>
+            <div class="grid">
+                Return:<span id="showmns">00</span><span>:</span><span id="showscs">00</span>
+            </div>
+            <div class="grid" id="text"></div>
+            <div class="grid">lunchdd break:</div>
             <div class="grid"><input type="time"></div>
           
 
         </div>
     </center>
 
-
-
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+<script src="JS Code.js"></script>
 </body>
 </html>

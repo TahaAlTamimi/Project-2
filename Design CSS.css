@@ -1,4 +1,4 @@
-#mainGrid{
+/* #mainGrid{
     display:grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 5px;
@@ -8,7 +8,7 @@
 }
 .grid{
     /* border: 1px black solid; */
-    padding: 5px;
+    /* padding: 5px;
 }
 #start{
     grid-column: 3/4;
@@ -22,4 +22,4 @@
     border: .5px grey solid;
     margin-left: 5% ;
     margin-right: 5%;
-}
+} */ 
