@@ -67,7 +67,19 @@ document.getElementById("second").value=cts;
             cts=59;
             ctm--;
             }
-           
+
+            
+            else{
+                cth=0;
+                cts=0;
+                ctm=0;
+              
+            }
+
+
+
+
+
         }
 
 
