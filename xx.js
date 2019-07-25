@@ -1,4 +1,4 @@
- setInterval(myTimer, 1000);
+setInterval(myTimer, 1000);
 // jquery
 function myTimer() {
   var d = new Date();
@@ -21,37 +21,30 @@ function myTimer() {
 // ctm:counter minute.
 // cts:counter second.
 var cth=0;
-var   ctm=0;
-var   cts=0;
-var   start=0;
+    ctm=0;
+    cts=0;
+    start=0;
     var timer_is_on = 0;
 
     var control;
 function down(){
     
-if(start===0&&document.getElementById("minute")&&document.getElementById("second")&&document.getElementById("hour")){
-
-cth=parseInt(document.getElementById("hour").value);
-
+if(start===0&&document.getElementById("minute")&&document.getElementById("second")){
 ctm=parseInt(document.getElementById("minute").value);
 cts=parseInt(document.getElementById("second").value);
 // if(isNaN(cth)) cth=0;
 // if(isNaN(ctm)) ctm=0;
 // if(isNaN(cts)) cts=0;
-document.getElementById("hour").value=cth;
 document.getElementById("minute").value=ctm;
 document.getElementById("second").value=cts;
 start=1;
+// document.getElementById('btn').setAttribute('disabled', 'disabled'); 
 }
-if(cth===0 && ctm===0 && cts===0) {
+if(ctm===0 && cts===0) {
     start = 0;
+   // document.getElementById('btn').removeAttribute('disabled');
     return false;
 }else{
-
-if(cth>12)
-cth=12;
-document.getElementById("hour").value=cth;
-
 
 if(ctm>60)
 ctm=60;
@@ -67,19 +60,20 @@ document.getElementById("second").value=cts;
             cts=59;
             ctm--;
             }
-           
+            else{
+                cts=0;
+                ctm=0;
+              
+            }
         }
 
 
 
 
 
-    
-    
     }
     
-    document.getElementById('hour').innerHTML = cth;
-
+    
 document.getElementById('minute').innerHTML = ctm;
   document.getElementById('second').innerHTML = cts;
    control= setTimeout('down()', 1000);
@@ -98,6 +92,7 @@ function startTimer(){
 
 
 function stopTimer(){
+  //  document.getElementById('btn2')
 
     clearTimeout(control);
     document.getElementById('btn2').setAttribute('disabled', 'disabled');
@@ -108,15 +103,11 @@ function stopTimer(){
 
 
 function Reset(){
-    document.getElementById('hour').innerHTML = 0;
-
+    //  document.getElementById('btn2')
     document.getElementById('minute').innerHTML = 0;
     document.getElementById('second').innerHTML = 0;
-    document.getElementById('hour').value = 0;
-
    document.getElementById('minute').value = 0;
    document.getElementById('second').value = 0;
-   
    var cth=0;
     ctm=0;
     cts=0;
@@ -125,16 +116,37 @@ function Reset(){
 
     var control;
     document.getElementById('btn1').disabled= false;
-document.getElementById('btn2').disabled= false;
+
   }
 
 
-  //document.getElementById("return").innerHTML=
 
+// $(document).ready(function(){
+
+    
+//     $("#btn").on("click",function(){
+
+        
+//         var x = $('#btn').val()
+//         if (x === 'Start') {
+//             $('#btn').attr('value', 'Stop')
+            
+//         } else {
+//             $('#btn').attr('value', 'Start')
+//         }
 
 
         
-
-
+//     })
+    
+//     });
+    
    
+    // to display button start
+    // if(cth===0){
+    // document.getElementById('btn').setAttribute('disabled', 'disabled');
+// }
+// else{
+    
 
+// }
