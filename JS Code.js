@@ -63,12 +63,15 @@ document.getElementById("second").value=cts;
 
     cts--;
     if(cts<0){
-        if(ctm>0){
+        if(ctm>0||ctm===0){
             cts=59;
+            ctm=60
+            cth--
             ctm--;
+            
             }
 
-            
+
             else{
                 cth=0;
                 cts=0;
