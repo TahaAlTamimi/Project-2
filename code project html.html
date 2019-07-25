@@ -19,15 +19,18 @@
                 Timer:
             </div>
             <div class="grid">
-                <input type="text" id="minute" value="0" size="3"/> &nbsp; &nbsp;
+                m<input type="text" id="minute" value="0" size="3"/> &nbsp; &nbsp;
             <!-- </div>
             <div class="grid"> -->
-                    <input type="text" id="second" value="0" size="3">
+                   s <input type="text" id="second" value="0" size="3">
                 </div>
 <!-- have chane tm -->
             <div class="grid" id="start">
-                <input type="button" value="Start" id="btn" onclick="countdownTimer()" /> <br>
-                <input type="button" value="Reset" id="btn2" />
+                <input type="button" name="onstart" value="Start" id="btn1" onclick="startTimer() " /> <br>
+
+                <input type="button" name="onstop" value="Stop" id="btn2" onclick="stopTimer()" /> <br>
+
+                <input type="button" name="onrest" value="Reset" id="btn3" onclick="Reset()" />
             </div>
 
             <div class="grid">
