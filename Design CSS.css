@@ -23,3 +23,49 @@
     margin-left: 5% ;
     margin-right: 5%;
 } */ 
+/* .addBtn {
+    padding: 10px;
+    width: 30%;
+    background: #dd0f0f;
+    color: rgb(85, 85, 85);
+    float: right;
+    text-align: center;
+    font-size: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+  .addBtn:hover {
+    background-color: rgb(56, 206, 26);
+  } */
+ #note{ background-color: rgb(9, 146, 200)
+
+ }
+
+
+
+ul {
+    display: inline-block;
+    cursor: move;
+    text-align: left;
+    width: 300px;
+    max-width: 100%;
+}
+
+li {
+    color: lightgray;
+}
+
+li:first-child {
+    font-size: 80%;
+    color: black;
+}
+
+input:hover[type='submit'] {
+    background-color: rgb(17, 168, 17); 
+    border: 0;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
