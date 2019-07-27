@@ -187,7 +187,7 @@ function changePhotos(myElement,myImgs){
 changePhotos(myElement,myImgs)
 
         
-// Todo list
+// Todo list tm
 $(document).ready(function($) {
   $('#note').submit(function() {
       if ($('#input').val() !== '') {
