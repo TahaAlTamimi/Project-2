@@ -8,7 +8,7 @@
 }
 .grid{
     /* border: 1px black solid; */
-    /* padding: 5px;
+/* padding: 5px;
 }
 #start{
     grid-column: 3/4;
@@ -22,7 +22,7 @@
     border: .5px grey solid;
     margin-left: 5% ;
     margin-right: 5%;
-} */ 
+} */
 /* .addBtn {
     padding: 10px;
     width: 30%;
@@ -39,9 +39,9 @@
   .addBtn:hover {
     background-color: rgb(56, 206, 26);
   } */
- #note{ background-color: rgb(9, 146, 200)
-
- }
+#note {
+    background-color: rgb(9, 146, 200)
+}
 
 
 
@@ -63,9 +63,39 @@ li:first-child {
 }
 
 input:hover[type='submit'] {
-    background-color: rgb(17, 168, 17); 
+    background-color: rgb(17, 168, 17);
     border: 0;
     color: white;
     padding: 5px 10px;
+    cursor: pointer;
+}
+#timeout{
+    width: 100%;
+    height: 1000px;
+    background-color: black;
+    opacity:.95 ;
+    position: absolute;
+    top: 0;
+    display:flex;
+    justify-content: center;
+
+   /* display: none; */
+}
+#cont{
+    width: 500px;
+    height: 300px;
+    
+    background-color: white;
+    position: relative;
+
+
+
+}
+#close{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 30px;
+    transform: rotate(45deg);
     cursor: pointer;
 }

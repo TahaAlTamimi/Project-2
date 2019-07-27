@@ -1,54 +1,59 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>
         Lalwle Clock
     </title>
     <link rel="stylesheet" type="text/css" href="Design CSS.css">
 </head>
+
 <body>
     <center>
-         <h1> Lalwle Clock </h1>
-         <h4> This is time </h4>
-         <!-- Add tm look at the end page -->
+        <h1> Lalwle Clock </h1>
+        <h4> This is time </h4>
+        <!-- Add tm look at the end page -->
 
-         <div id="note" align="left" >
-                 <h2>
-                     My To Do List
-                </h2>
-               
-                <form id="note">
+        <div id="note" align="left">
+            <h2>
+                My To Do List
+            </h2>
+            <div id="note">
+            <form >
+                
+                <input id="input" type="text" placeholder="Task Title...">
+                <input type="submit" value="Add">
+                <!-- <div class="close">+</div> -->
 
-                     <input id="input" type="text" placeholder="Task Title...">
-                     <input type="submit" value="Add">
-                 
-                </form>
+            </form>
+        </div>
+            <ul title="Click to delete; drag to reorder">
+            </ul>
 
-                 <ul title="Click to delete; drag to reorder">
-                </ul>
-
-          </div>
-         <!-- end code -->
+        </div>
+        <!-- end code -->
 
 
-         <div id="clock"></div>
+        <div id="clock" ></div>
         <div>
-            <img id="image" src="https://wpart.org/wp-content/uploads/2016/10/talk-is-cheap-show-me-the-code.-linus-torvalds.jpg" style="width:50%;" height="400" > 
+            <img id="image"
+                src="https://wpart.org/wp-content/uploads/2016/10/talk-is-cheap-show-me-the-code.-linus-torvalds.jpg"
+                style="width:50%;" height="400">
         </div>
 
         <div id="mainGrid">
-            
-            <div class="grid">
+
+            <div class="grid" >
                 Timer:
             </div>
             <div class="grid">
-               h: <input type="text" id="hour" value="0" size="3"/> &nbsp;
-                m: <input type="text" id="minute" value="0" size="3"/> &nbsp; 
-            <!-- </div>
+                h: <input type="text" id="hour" value="0" size="3" /> &nbsp;
+                m: <input type="text" id="minute" value="0" size="3" /> &nbsp;
+                <!-- </div>
             <div class="grid"> -->
-                   s: <input type="text" id="second" value="0" size="3">
-                </div>
-<!-- have chane tm -->
+                s: <input type="text" id="second" value="0" size="3">
+            </div>
+            <!-- have chane tm -->
             <div class="grid" id="start">
                 <input type="button" name="onstart" value="Start" id="btn1" onclick="startTimer() " /> <br>
 
@@ -58,23 +63,36 @@
             </div>
 
             <div class="grid">
-               return Time
+                return Time
             </div>
             <div class="grid" id="text"></div>
             <div class="grid">lunchdd break:</div>
             <div class="grid"><input type="time"></div>
-          
+
+
+            <!-- tm begin -->
+            <div id="timeout" role="alert">
+
+            <div id="cont">
+                <div id="close" onclick="closePop()">+</div>
+
+            </div>    
+            
+            </div>
+            
+
 
         </div>
     </center>
     <!-- add tm -->
     <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
-<!-- end  -->
-    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <!-- end tm -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 
-     
+
 
     </script>
-<script src="JS Code.js"></script>
+    <script src="JS Code.js"></script>
 </body>
+
 </html>
