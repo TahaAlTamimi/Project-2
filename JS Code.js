@@ -209,7 +209,7 @@ jQuery(document).ready(function($){
       $('.bts-popup').on('click', function(event){
           if( $(event.target).is('.bts-popup-close') || $(event.target).is('.bts-popup') ) {
               event.preventDefault();
-              $(this).removeClass('is-visible');
+              $(event).removeClass('is-visible');
           }
       });
       //close popup when clicking the esc keyboard button
@@ -246,7 +246,27 @@ function count(){
     second=totalsecond-(hour*3600+minute*60);
     document.getElementById("cont").innerHTML=hour+" :"+minute+" :"+second;
 }
-  
+setInterval(function(){
+    var date = new Date();
+    var second=date.getSeconds();
+    var minutes = date.getMinutes();
+    var hours = date.getHours();
+    if (hours > 12){
+          hours = hours -12;}
+
+var currentTime =hour + ":" + minute+":"+ second; 
+var currentTime =hours + ":" + minutes;
+// If alarmTime equal currentTime , the sound play & The value of input time make 0, and the sound stop after 1/2 second.
+if (alarmTime == currentTime) {
+ sound.play()
+ document.getElementById("hour").value = "00";
+ document.getElementById("minute").value = "00";
+ document.getElementById("second").value = "00";
+ setTimeout('sound.auto()', 20000) ;
+ }
+ 
+},1000);
+
   
 
 
