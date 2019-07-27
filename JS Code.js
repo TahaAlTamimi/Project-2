@@ -194,14 +194,14 @@ $(document).ready(function($) {
           var newTask = $('#input').val();
           var newLi = $('<li>' + newTask + '</li>');
           newLi.on('click', function() {
-              $(this).remove(); // Attach the event handler *before* adding the element
+              $(this).remove();
           });
-          $('ul').prepend(newLi); // To put the new task at the top of the list
+          $('ul').prepend(newLi); 
           $('#input').val('');
-          return false; // So the change persists
+          return false; 
       }
   });
-  $('ul').sortable(); // Because what good is a to-do list that you can't sort? :)
+  $('ul').sortable();
 });
 
    
